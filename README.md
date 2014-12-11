@@ -1,4 +1,5 @@
 HOWTO: SCIgen install:
+```
 1. Get cvs - apt-get install cvs
 2. pull down scigen using cvs
 	-cvs -d :pserver:anoncvs@cvs.pdos.csail.mit.edu:/cvs login
@@ -8,6 +9,7 @@ HOWTO: SCIgen install:
 3. get latex - apt-get install texlive
 
 4. install gnuplot and graphviz using synaptic
+```
 
 HOWTO:SCIgen usage:
 Keep tex file without translating to .ps
