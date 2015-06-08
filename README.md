@@ -12,6 +12,7 @@ HOWTO: SCIgen install:
 ```
 
 HOWTO:SCIgen usage:
+
 Keep tex file without translating to .ps
 -Use --savedir flag to create a folder with the .tex file in it
 -Essentially does not latex them together
@@ -71,8 +72,7 @@ SEQUENCE:
 6. pipe that list to make-rtf.pl, like 
 > ./make-rtf.pl < files.in
 NOTE: files are created in ./rtf/ by default
-TODO redirect stderr
-TODO add cmd line option to specify output dir
+TODO add cmd line option to specify output dir / redir stderr
 7. cd to 'fakefiles' in cmd.exe
 8. run >perl rtfsave.pl rtf\[filename] 
 NOTE: silent output means no error
@@ -83,11 +83,5 @@ TODO add cmd line option to specify output dir
 (Optional) 10. Run 'mod_md.pl' to modify the internal metadata 
 TODO also modify document Comment (since latex2rtf adds one)
 
-
--using cygwin b/c otherwise scigen craps out (assumes *nix env)
--Works to create rtf files (yay)
--Doesn't work to switch to word (b/c cygwin doesn't have a notion of Word)
 BUG creates begin\{footnotesize} artifact from scigen being modified
-OK, great. Now the "VM of Linux on Windows" req has been changed to "cygwin on Windows"
->Have two opposing requirements: scigen only works on *nix, and Word only works on Windoze. Might not be able to get around this type of jankness. Rewriting scigen to work on Windows is not in my bailiwick
-
+BUG/FEATURE doesn't work on windows
